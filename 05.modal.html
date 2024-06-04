@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05.互動視窗(modal)</title>
+    <link rel="stylesheet" href=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.css
+        integrity="sha512-VcyUgkobcyhqQl74HS1TcTMnLEfdfX6BbjhH8ZBjFU9YTwHwtoRtWSGzhpDVEJqtMlvLM2z3JIixUOu63PNCYQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>互動視窗(modal)</h1>
+        <h2>觸發可以使用button或a兩種標籤</h2>
+        <ul class=" list-group my-3">
+            <li class="list-group-item">使用data-bs-toggle="modal"去觸發互動式功能</li>
+            <li class="list-group-item">兩者需要對應modal主體的id</li>
+            <li class="list-group-item">button要在data-bs-target設定#id</li>
+            <li class="list-group-item">a要設定href="#id"</li>
+        </ul>
+
+        <div class="row">
+            <div class="col">
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    使用button觸發互動視窗(modal)
+                </button>
+                <!-- 無法用data-bs-target，改放入href裡面 -->
+                <a href="#exampleModal" class="btn btn-primary" data-bs-toggle="modal">使用a觸發互動視窗(modal)</a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Modal -->
+    <!-- data-bs-backdrop="static" 可鎖定背景，點擊背景時不自動關閉modal -->
+    <div class="modal fade" id="exampleModal" data-bs-backdrop="static">
+        <!-- 調整視窗大小 .modal-sm(300px) .modal-lg(800px) .modal-xl(1140px) ，沒寫是500px
+             .modal-dialog-centered可將視窗垂直置中
+             .modal-dialog-scrollable 可讓互動視窗捲動--->
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, cupiditate, sit eligendi
+                        reiciendis
+                        cumque nam enim cum dolores sunt pariatur doloremque ab deleniti voluptatum, in beatae
+                        consequatur
+                        exercitationem! Ab, sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+                        delectus vel minima reiciendis enim maiores, ad aspernatur repellendus, temporibus consequatur
+                        perspiciatis veniam, culpa itaque nisi. Possimus commodi dignissimos molestiae quasi soluta hic
+                        unde
+                        explicabo debitis ducimus, dolore nisi, autem odio odit, doloremque id? Corporis adipisci
+                        sapiente
+                        quisquam magni. Nemo, eum sapiente, quos reprehenderit sint libero at fugiat aperiam et
+                        repudiandae
+                        placeat culpa autem laborum, vel tenetur aspernatur molestiae eveniet odio. Itaque, culpa
+                        minima?
+                        Veniam quibusdam, pariatur rem quae tempora repudiandae nemo modi quos quisquam laboriosam
+                        numquam
+                        quaerat. Hic, ea quod debitis perspiciatis libero quos aspernatur. Eum itaque dolor ipsa nisi.
+                        Culpa
+                        dolores deserunt reprehenderit accusantium repudiandae itaque sed rem ab dicta nihil? Accusamus
+                        corporis esse exercitationem dolorem neque iure, asperiores qui perspiciatis doloribus voluptate
+                        eligendi. Consequatur maiores quia cumque dicta laudantium suscipit consequuntur maxime vel
+                        earum
+                        quo dolor vitae perspiciatis, laborum, atque temporibus nisi aut dolores commodi! Culpa quod
+                        tempora
+                        inventore delectus obcaecati cum excepturi reprehenderit unde voluptas nobis dolorem sunt
+                        facilis
+                        repellendus, error repellat. Iure voluptatem consequuntur fuga. Magnam assumenda alias quis,
+                        provident ipsum sint, commodi voluptatibus quam voluptates voluptate sapiente vel, facilis
+                        ratione
+                        hic ea? Reiciendis impedit quis iste eos distinctio perferendis corrupti commodi possimus
+                        necessitatibus illum, quo eligendi. Aperiam eum dolore esse maxime assumenda est laboriosam
+                        atque
+                        provident qui sit, architecto facere, aut reiciendis, unde autem quia minima repudiandae
+                        laudantium.
+                        Laudantium dolore impedit eos magni velit repudiandae magnam enim delectus nostrum esse! Earum
+                        praesentium maiores rem sequi consectetur blanditiis, ratione illo excepturi vitae sapiente
+                        incidunt
+                        fuga. Harum tenetur facilis omnis odio ut fugiat officiis vel hic magnam dicta, dolore pariatur
+                        modi
+                        ex eveniet quae, eos nemo iure nihil vero? Quaerat nihil eius nisi assumenda nostrum
+                        perspiciatis.
+                        Eos ea consequatur delectus unde consequuntur excepturi, tempora aperiam id, fugit, aut eveniet
+                        iure
+                        ratione deserunt nemo ipsa. Commodi quis officia, nulla ex accusantium voluptatibus aliquam
+                        maxime
+                        adipisci rerum provident rem eos eaque expedita neque magnam? Optio esse illo iste rerum eius
+                        harum,
+                        fuga dolorum pariatur enim eaque ut! Quae, consequuntur aut totam debitis excepturi inventore
+                        architecto sunt, tempore similique dicta optio distinctio! Delectus ullam earum nesciunt quo
+                        beatae,
+                        dolor reiciendis aliquam quasi rerum odio vero, necessitatibus, tempore quidem exercitationem
+                        velit
+                        est error repellendus dolore? Magnam nostrum in voluptatem, magni iste ea dicta possimus enim
+                        unde
+                        sint ipsa reprehenderit! Assumenda debitis repellendus cum magnam numquam voluptatibus, delectus
+                        dolores, natus quo nisi corporis quaerat animi nesciunt! Expedita quisquam fugiat impedit ipsam
+                        quas
+                        dicta similique blanditiis ipsum. Porro eum deserunt labore similique veniam? Omnis veritatis
+                        porro
+                        hic perferendis mollitia exercitationem, quisquam quae incidunt amet earum cum ipsum accusamus.
+                        Perferendis labore pariatur quos minus voluptas debitis fuga, ab ipsum iure recusandae quia
+                        voluptate a.
+                    </p>
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="https://picsum.photos/1920/600/?random=10" class="img-fluid w-100 h-100"
+                                style="object-fit: cover;">
+                        </div>
+                        <div class="col-6">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nam veritatis
+                                voluptatibus! Cum aliquid dolores maxime earum dicta inventore illum numquam reiciendis
+                                sapiente! Odit veritatis fuga accusantium architecto amet, quidem nihil dolorem id
+                                fugiat itaque porro deleniti quo accusamus sapiente? Vero quia vitae, deserunt quaerat
+                                aut, iusto soluta ut temporibus fugit enim at esse ipsam cupiditate dignissimos quam
+                                laboriosam, aspernatur officia nemo? Itaque voluptatum rem quas animi cum autem dolore
+                                ex rerum voluptate! Rem facere dolor incidunt animi aliquam, placeat nisi odio fugit ex
+                                nulla similique totam nemo dignissimos reiciendis ad id possimus, consectetur corporis
+                                recusandae in consequuntur adipisci dolorum.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src=https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js
+        integrity="sha512-7Pi/otdlbbCR+LnW+F7PwFcSDJOuUJB3OxtEHbg4vSMvzvJjde4Po1v4BR9Gdc9aXNUNFVUY+SK51wWT8WF0Gg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
